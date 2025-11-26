@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>kemasinaja - Edible Film</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">kemasinaja</div>
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <h1>Selamat Datang di kemasinaja</h1>
+    <p>Solusi kemasan pangan ramah lingkungan</p>
+    <a href="#produk" class="btn">Lihat Produk</a>
+  </header>
+
+  <section id="produk" class="product-section">
+    <h2>Produk Kami</h2>
+    <div class="product-card">
+      <img src="edible-film.jpg" alt="Edible Film" />
+      <h3>Edible Film</h3>
+      <p>Lapisan kemasan pangan yang dapat dimakan, aman, dan ramah lingkungan.</p>
+      <div class="price">
+        <span class="old-price">Rp 12.000</span>
+        <span class="new-price">Rp 10.000</span>
+      </div>
+      <button class="btn buy-btn">Beli Sekarang</button>
+    </div>
+  </section>
+
+  <section id="tentang" class="about">
+    <h2>Tentang Kami</h2>
+    <p>kemasinaja menghadirkan solusi kemasan pangan inovatif yang aman, murah, dan bebas limbah plastik.</p>
+  </section>
+
+  <section id="kontak" class="contact">
+    <h2>Kontak</h2>
+    <p>Instagram: @kemasinaja | WhatsApp: <span id="wa-number-display">08xxxxxxxx</span></p>
+  </section>
+
+  <footer>
+    <p>© 2025 kemasinaja — Semua Hak Dilindungi</p>
+  </footer>
+
+  <!-- POP UP CHECKOUT -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" title="Tutup">&times;</span>
+      <h2>Checkout Edible Film</h2>
+
+      <label>Varian:</label>
+      <select id="varian">
+        <option value="Original">Original</option>
+        <option value="Rasa Strawberry">Rasa Strawberry</option>
+        <option value="Rasa Coklat">Rasa Coklat</option>
+      </select>
+
+      <label>Jumlah:</label>
+      <input type="number" id="qty" min="1" value="1" />
+
+      <p>Total Harga: <strong id="total-harga">Rp 10.000</strong></p>
+
+      <label>Nama Pembeli:</label>
+      <input type="text" id="nama" placeholder="Nama lengkap" />
+
+      <label>Alamat Pengiriman:</label>
+      <textarea id="alamat" placeholder="Alamat lengkap (jalan, kecamatan, kota)"></textarea>
+
+      <label>Metode Pembayaran:</label>
+      <select id="pembayaran">
+        <option>COD (Bayar di tempat)</option>
+        <option>Transfer Bank</option>
+        <option>E-Wallet (Dana / OVO / Gopay)</option>
+      </select>
+
+      <div class="small">
+        <input type="checkbox" id="saveOrderLocal" checked />
+        <label for="saveOrderLocal">Simpan pesanan ke dashboard (lokal)</label>
+      </div>
+
+      <button id="pesanWA" class="btn">Pesan via WhatsApp</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
